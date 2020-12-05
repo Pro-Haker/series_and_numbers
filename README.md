@@ -7,4 +7,4 @@ Stay tuned!
 ## How to run?
 To run, open your console, and type:
 
-```./????```
+`./series <mersenne|fibonacci> <number_quantity>`
