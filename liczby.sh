@@ -5,37 +5,37 @@ function copyright {
 	echo "*********************"
 	echo "*                   *"
 	echo "*This script is to  *"
-	echo "*liczb Mersenna i   *"
-	echo "*Fibonacciego.      *"
+	echo "*Mersenne series and*"
+	echo "*Fibbonacci series. *"
 	echo "*Copyright 2020     *"
-	echo "*Julian Wilczek     *"
+	echo "*Pro-Haker          *"
 	echo "*********************"
 	echo ""
 }
 function help {
-	echo "SKŁADNIA: $0 <mersenne|fibonacci> <ilość_liczb>"
+	echo "SYNTAX: $0 <mersenne|fibonacci> <number_quantity>"
 }
 function fibonacci {
-#	read -p "Ile liczb Fibonacciego chcesz zobaczyć? " n
+#	read -p "How much Fibonacci's numbers you want to see?" n
 	a=0
 	b=1
 	n=$1
 	for (( i=1; i<=n; i++ ));
 	do
-        	echo "$i liczba Fibonacciego to $a"
+        	echo "$i Fibonacci's number is $a"
         	fibonacci=$((a+b))
         	a=$b
 		b=$fibonacci
 	done
 }
 function mersenne {
-#	read -p "Ile liczb Mersenna chcesz zobaczyć? " n
+#	read -p "How much Mersenne's numbers you want to see? " n
 	n=$1
 	for (( i=1; i<=n; i++ )); do
 #	        a=$((2^i))
 	        mersenne=$((2 ** i -1))
 #       	echo $a
-	        echo "$i liczba Mersenna to $mersenne"
+	        echo "$i Mersenne's number is $mersenne"
 done
 }
 if [ $# -lt 2 ]; then
