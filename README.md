@@ -8,3 +8,5 @@ Stay tuned!
 To run, open your console, and type:
 
 `./series <mersenne|fibonacci> <number_quantity>`
+
+Good time!
