@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 function copyright {
 	echo ""
 	echo "*********************"
