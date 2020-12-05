@@ -1,10 +1,10 @@
 #!/bin/bash
-#
+
 function copyright {
 	echo ""
 	echo "*********************"
 	echo "*                   *"
-	echo "*To jest skrypt do  *"
+	echo "*This script is to  *"
 	echo "*liczb Mersenna i   *"
 	echo "*Fibonacciego.      *"
 	echo "*Copyright 2020     *"
