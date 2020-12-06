@@ -39,6 +39,15 @@ function mersenne {
 done
 }
 
+function palindromic_number {
+	n=$1
+	if [[ $(rev <<< "$n") == "$n" ]]; then
+		echo "Number is palindromic number"
+	else
+		echo "Number isn't palindromic number"
+	fi
+}
+
 function lucas {
 	a=2
 	b=1
@@ -61,6 +70,9 @@ else
 		copyright
 	elif [ $1 == "mersenne" ]; then
 		mersenne $2
+		copyright
+	elif [ $1 == "palindromic" ]; then
+		palindromic_number $2
 		copyright
 	elif [ $1 == "lucas" ]; then
 		lucas $2
