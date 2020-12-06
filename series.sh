@@ -44,6 +44,7 @@ function palindromic_number {
 		echo "Number is palindromic number"
 	else
 		echo "Number isn't palindromic number"
+	fi
 }
 if [ $# -lt 2 ]; then
 	help
