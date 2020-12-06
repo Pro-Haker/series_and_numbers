@@ -58,7 +58,7 @@ function lucas {
 		b=$lucas
 	done
 }
-}
+
 if [ $# -lt 2 ]; then
 	help
 	copyright
