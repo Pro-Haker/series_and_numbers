@@ -38,6 +38,13 @@ function mersenne {
 	        echo "$i Mersenne's number is $mersenne"
 done
 }
+function palindromic_number {
+	n=$1
+	if [ n == n[2] ]; then
+		echo "Number is palindromic number"
+	else
+		echo "Number isn't palindromic number"
+}
 if [ $# -lt 2 ]; then
 	help
 	copyright
@@ -47,6 +54,9 @@ else
 		copyright
 	elif [ $1 == "mersenne" ]; then
 		mersenne $2
+		copyright
+	elif [ $1 == "palindromic" ]; then
+		palindromic_number
 		copyright
 	else
 		help
