@@ -46,6 +46,19 @@ function palindromic_number {
 		echo "Number isn't palindromic number"
 	fi
 }
+function lucas {
+	a=2
+	b=1
+	n=$1
+	for (( i=1; i<=n; i++ ));
+	do
+        	echo "$i Lucas's number is $a"
+        	fibonacci=$((a+b))
+        	a=$b
+		b=$lucas
+	done
+}
+}
 if [ $# -lt 2 ]; then
 	help
 	copyright
@@ -58,6 +71,9 @@ else
 		copyright
 	elif [ $1 == "palindromic" ]; then
 		palindromic_number
+		copyright
+	elif [ $1 == "lucas" ]; then
+		lucas
 		copyright
 	else
 		help
