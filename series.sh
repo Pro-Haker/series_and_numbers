@@ -13,7 +13,7 @@ function copyright {
 	echo ""
 }
 function help {
-	echo "SYNTAX: $0 <mersenne|fibonacci> <number_quantity>"
+	echo "SYNTAX: $0 <mersenne|fibonacci|lucas> <number_quantity>"
 }
 function fibonacci {
 #	read -p "How much Fibonacci's numbers you want to see?" n
@@ -38,14 +38,7 @@ function mersenne {
 	        echo "$i Mersenne's number is $mersenne"
 done
 }
-function palindromic_number {
-	n=$1
-	if [ n == n[2] ]; then
-		echo "Number is palindromic number"
-	else
-		echo "Number isn't palindromic number"
-	fi
-}
+
 function lucas {
 	a=2
 	b=1
@@ -53,7 +46,7 @@ function lucas {
 	for (( i=1; i<=n; i++ ));
 	do
         	echo "$i Lucas's number is $a"
-        	fibonacci=$((a+b))
+        	lucas=$((a+b))
         	a=$b
 		b=$lucas
 	done
@@ -69,11 +62,8 @@ else
 	elif [ $1 == "mersenne" ]; then
 		mersenne $2
 		copyright
-	elif [ $1 == "palindromic" ]; then
-		palindromic_number
-		copyright
 	elif [ $1 == "lucas" ]; then
-		lucas
+		lucas $2
 		copyright
 	else
 		help

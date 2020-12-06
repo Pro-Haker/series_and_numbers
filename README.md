@@ -7,6 +7,6 @@ Stay tuned!
 ## How to run?
 To run, open your console, and type:
 
-`./series <mersenne|fibonacci|palindromic|lucas> <number_quantity|number>`
+`./series <mersenne|fibonacci|lucas> <number_quantity>`
 
 Enjoy!
