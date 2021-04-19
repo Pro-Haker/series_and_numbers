@@ -13,7 +13,7 @@ function copyright {
 	echo ""
 }
 function help {
-	echo "SYNTAX: $0 <mersenne|fibonacci|lucas> <number_quantity>"
+	echo "SYNTAX: $0 <mersenne|fibonacci|palindromic|lucas> <number_quantity|number>"
 }
 function fibonacci {
 #	read -p "How much Fibonacci's numbers you want to see?" n
